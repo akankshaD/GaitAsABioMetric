@@ -16,7 +16,4 @@ This project seeks out to verify if every human being has, in fact a unique gait
 
 5.Finally, we use different machine learning models for best recognition results.
 
-
-
-
-
+GOOGLE Drive Link:
