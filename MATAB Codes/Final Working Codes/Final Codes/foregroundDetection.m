@@ -27,3 +27,5 @@ while ~isDone(videoSource)
 end
 
  release(videoPlayer);
+ 
+ %For the readme
