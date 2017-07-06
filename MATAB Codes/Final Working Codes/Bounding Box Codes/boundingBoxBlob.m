@@ -1,3 +1,5 @@
+% Drawing the bounding box around an object using BLOB ANALYSIS
+
 minsize = 8;
 maxsize = 100;
 videoSource = vision.VideoFileReader('C:\Users\Akanksha\Desktop\Project\Dataset\videos\test23.mp4','VideoOutputDataType','uint8');
