@@ -13,9 +13,9 @@ j = 1;
 while j < size(I, 1);
     imPrev = im2double(rgb2gray(imread(strcat('C:\Users\Akanksha\Documents\MATLAB\',folderName,'\output_test',num2str(videoNum),'_',num2str(I(j)),'.png'))));
     imCurr = im2double(rgb2gray(imread(strcat('C:\Users\Akanksha\Documents\MATLAB\',folderName,'\output_test',num2str(videoNum),'_', num2str(I(j+1)),'.png'))));
-    of = step(opticalFlow, imPrev, imCurr);  % computing the optical flow matrix for the current frame
-
-    ofBBox = of(mat_h(j,1):mat_h(j, 2), mat_w(j, 1):mat_w(j,2));    % filtering the bounding box from the optical flow matrix
+    of = step(opticalFlow, imPrev, imCurr);  % computing the optical flow matrix for the current frame using a standard two frames
+    
+    ofBBox = of(mat_h(j,1):mat_h(j, 2), mat_w(j, 1):mat_w(j,2));    % filtering the bounding box from the optical flow matrix, initially hardcoded, because of 70-80% bounding boxes
 
     rV = zeros((size(ofBBox,1)*size(ofBBox,2)), 1);
     iV = zeros((size(ofBBox,1)*size(ofBBox,2)), 1);
