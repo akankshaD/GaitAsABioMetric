@@ -15,7 +15,7 @@ Given a video sequence with T frames, we compute the gait similarity function d 
 Where  is the flow histogram at frame i and is the flow histogram of the reference frame. f is the  -norm 
 similarity measurement function. The middle frame of the frame sequence is usually taken as the reference frame to
 estimate the gait cycle accurately
-We take the frames between two best matched valley points (marked as green boxes) as a gait cycle. Finally, we can obtain an Averaged Flow Histogram (AFH) which is the “unique gait signature” using the following equation: 
+We take the frames between two best matched valley points as a gait cycle. Finally, we can obtain an Average Flow Histogram (AFH) which is the “unique gait signature” using the following equation: 
 
 where  and  are the beginning and ending frame indices of a gait cycle
 
