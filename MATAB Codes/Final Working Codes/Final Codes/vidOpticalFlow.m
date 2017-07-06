@@ -27,4 +27,4 @@ end
 % Close the video reader and player
 
 release(videoPlayer);
-release(videoReader);
+release(videoReader); 
