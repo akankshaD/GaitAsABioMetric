@@ -26,7 +26,8 @@ We get the least error and correct prediction when r=15, with kNN. We got the mi
 
 6. Graphical Representation: In this graph, we have 9 subjects and 25 videos, and we plot a multivariate parallel coordinates graph for them. With sufficient data, we would get a graph similar to the one on the right, with the videos of the same person represented as a single-color band.
 
-
+Folder wise info:
+Final Working Codes : It follows a sequence of using Blob Analysis to computing the Bounding Boxes, to using it to compute Gait signature for an individual. Finally, the main program uses it to train and train data and models.m uses this data, and tests it against different models, and checks for class error in each.
 	
 
 
