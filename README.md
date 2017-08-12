@@ -1,4 +1,4 @@
-#GAIT AS A BIOMETRIC
+GAIT AS A BIOMETRIC
 By - Akanksha Dwivedi, Tarini Chandrashekhar
 
 MP Project Elective I Human Identification involves biometric features such as fingerprints/palm-prints, face, signatures etc. but the problem with these features is that they require specific devices to capture these features.
@@ -6,8 +6,8 @@ Here is where gait classification is beneficial because it requires just a singl
 This project seeks out to verify if every human being has, in fact a unique gait signature. Following steps are followed in order to verify our claim:
 1. The system first converts the input color images to gray level images.
 2. The optical flow algorithm is employed on the image sequence to get the flow field with respect to two contiguous frames and use the difference in the optical flow between the two frames to draw a bounding box around the object. Now, the moving object detection is done using two separate methods, but their overall impact on the efficiency of the algorithm were no different. 
-###•	Blob Analysis: First, a mask is obtained by applying a foreground detector, to discern the foreground object from the rest of the image, and then Blob Detector is employed to detect the consistent image regions. We got 70-80 % frames with good bounding boxes.
-###•	YOLO detection – You Only Look Once (YOLO) is a real-time object detection which uses a single pre-trained neural network model on the entire image. It predicts varying objects in a single frame with varying weighted probabilities. It looks at the whole image at test time so its predictions are informed by global context in the image, so the detection is 100 percent accurate, with respect to the bounding box.
+•	Blob Analysis: First, a mask is obtained by applying a foreground detector, to discern the foreground object from the rest of the image, and then Blob Detector is employed to detect the consistent image regions. We got 70-80 % frames with good bounding boxes.
+•	YOLO detection – You Only Look Once (YOLO) is a real-time object detection which uses a single pre-trained neural network model on the entire image. It predicts varying objects in a single frame with varying weighted probabilities. It looks at the whole image at test time so its predictions are informed by global context in the image, so the detection is 100 percent accurate, with respect to the bounding box.
 
 3.Now, we construct a bivariate flow histogram for each frame based on the polar component of flows inside the bounding box. We normalise the histogram.  Since, the number of frames differ for each video, we calculate a discerning feature called Gait Cycle for each subject, by performing histogram matching. 
 Given a video sequence with T frames, we compute the gait similarity function d using the following equation:
